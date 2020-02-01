@@ -1,0 +1,85 @@
+Build started at: Thu Jan 30 20:43:49 IST 2020
+check-tools ===> .
+params ===> .
+     create  params
+clean_METALOG ===> .
+clean_METALOG ===> distrib/sets
+do-distrib-dirs ===> .
+distrib-dirs ===> etc	(with: DESTDIR=/)
+proc:   permissions (0755, 0555, not modified: Function not implemented)
+sys:    permissions (0755, 0444, not modified: Operation not permitted)
+includes ===> .
+includes ===> include
+includes ===> include/../minix/include
+includes ===> include/../minix/include/arch
+includes ===> include/../minix/include/arch/i386
+includes ===> include/../minix/include/arch/i386/include
+includes ===> include/../minix/include/ddekit
+includes ===> include/../minix/include/ddekit/minix
+includes ===> include/../minix/include/libdde
+includes ===> include/../minix/include/minix
+includes ===> include/../minix/include/net
+includes ===> include/../minix/include/net/gen
+includes ===> include/../minix/include/sys
+includes ===> include/../common/include/prop
+includes ===> include/../common/include/ppath
+includes ===> sys
+includes ===> sys/arch
+includes ===> sys/arch/i386
+includes ===> sys/arch/i386/include
+includes ===> sys/arch/i386/stand
+includes ===> sys/arch/i386/stand/mbr
+includes ===> sys/arch/i386/stand/mbr/mbr
+includes ===> sys/arch/i386/stand/mbr/mbr_bootsel
+includes ===> sys/arch/i386/stand/mbr/mbr_ext
+includes ===> sys/arch/i386/stand/mbr/mbr_com0
+includes ===> sys/arch/i386/stand/mbr/mbr_com0_9600
+includes ===> sys/arch/i386/stand/mbr/gptmbr
+includes ===> sys/arch/i386/stand/boot
+includes ===> sys/arch/i386/stand/boot/biosboot
+includes ===> sys/arch/i386/stand/bootxx
+includes ===> sys/arch/i386/stand/bootxx/bootxx_ffsv1
+includes ===> sys/arch/i386/stand/bootxx/bootxx_minixfs3
+includes ===> sys/arch/i386/stand/bootxx/bootxx_ext2fs
+includes ===> sys/arch/i386/stand/cdboot
+includes ===> sys/arch/i386/../x86/include
+includes ===> sys/dev
+includes ===> sys/dev/i2c
+includes ===> sys/fs
+includes ===> sys/fs/cd9660
+includes ===> sys/fs/msdosfs
+includes ===> sys/fs/puffs
+includes ===> sys/net
+includes ===> sys/netinet
+includes ===> sys/netinet6
+includes ===> sys/sys
+includes ===> sys/ufs
+includes ===> sys/ufs/ffs
+includes ===> sys/ufs/lfs
+includes ===> sys/ufs/mfs
+includes ===> sys/ufs/ufs
+includes ===> sys/ufs/ext2fs
+includes ===> sys/uvm
+includes ===> lib
+includes ===> lib/csu
+includes ===> lib/../minix/lib/libsys
+includes ===> lib/../minix/lib/libmthread
+includes ===> lib/libc
+includes ===> lib/libc/pkgconfig
+     create  libc/ucontextoffsets.h
+*** Error code 1
+
+Stop.
+make[3]: stopped in /usr/src/lib/libc
+*** Error code 1
+
+Stop.
+make[2]: stopped in /usr/src/lib
+*** Error code 1
+
+Stop.
+make[1]: stopped in /usr/src
+*** Error code 1
+
+Stop.
+make: stopped in /usr/src
