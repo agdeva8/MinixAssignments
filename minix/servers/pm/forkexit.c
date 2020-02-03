@@ -112,6 +112,8 @@ int do_fork()
   /* Find a free pid for the child and put it in the table. */
   new_pid = get_free_pid();
   rmc->mp_pid = new_pid;	/* assign pid to child */
+  
+  printf("MINIX: PID (via fork) %d created\n", new_pid);
 
   memset(&m, 0, sizeof(m));
   m.m_type = VFS_PM_FORK;
@@ -204,6 +206,8 @@ int do_srv_fork()
   /* Find a free pid for the child and put it in the table. */
   new_pid = get_free_pid();
   rmc->mp_pid = new_pid;	/* assign pid to child */
+  
+  printf("Minix: new process created pid is %d\n", rmc->mp_pid);
 
   memset(&m, 0, sizeof(m));
   m.m_type = VFS_PM_SRV_FORK;
@@ -385,6 +389,7 @@ int dump_core;			/* flag indicating whether to dump core */
 	}
   }
 
+  printf("MINIX: PID %d exited\n", mp->mp_pid);
   /* Send a hangup to the process' process group if it was a session leader. */
   if (procgrp != 0) check_sig(-procgrp, SIGHUP, FALSE /* ksig */);
 }

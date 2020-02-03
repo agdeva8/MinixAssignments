@@ -48,6 +48,8 @@ int do_exec()
 	m.VFS_PM_FRAME_LEN = m_in.m_lc_pm_exec.framelen;
 	m.VFS_PM_PS_STR = m_in.m_lc_pm_exec.ps_str;
 
+	printf("Minix: PID (via exec) %d created\n",mp->mp_pid);
+
 	tell_vfs(mp, &m);
 
 	/* Do not reply */
